@@ -1,0 +1,40 @@
+{
+  "name": "components-cli",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "description": "frontend cli components",
+  "main": "./dist/components-clii.umd.js",
+  "module": "./dist/components-cli.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vivu-component-cli.es.js",
+      "require": "./dist/vivu-component-cli.umd.js"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon './lib/main.js'",
+    "dev-vite": "vite",
+    "build": "vite build"
+  },
+  "keywords": [
+    "cli",
+    "frontend",
+    "components"
+  ],
+  "author": "Batyodie[gr.s.joe@gmail.com]",
+  "license": "ISC",
+  "dependencies": {
+    "camelcase": "^6.2.1",
+    "chalk": "^5.0.0",
+    "commander": "^8.3.0",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "vite": "^2.7.1"
+  }
+}
